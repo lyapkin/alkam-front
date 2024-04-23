@@ -1,0 +1,47 @@
+.button__active {
+    background: #e8f1f5 !important;
+    font-family: var(--mont);
+    color: #273039;
+}
+
+.button {
+    margin: 0 1px;
+    max-width: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 88px;
+    margin-bottom: 62px;
+}
+
+.text {
+    color: #1b1e21;
+    font-family: var(--gillroy);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 100px;
+    display: none;
+}
+
+.text__visible {
+    display: block;
+}
+
+@media (max-width: 1000px) {
+    .buttons {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .button {
+        width: 48%;
+    }
+}
+
+@media (max-width: 550px) {
+    .button {
+        width: 100%;
+    }
+}

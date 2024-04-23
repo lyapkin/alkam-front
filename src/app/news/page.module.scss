@@ -1,0 +1,14 @@
+.text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 94px;
+    max-width: 525px;
+}
+
+@media (max-width: 1000px) {
+    .text {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}

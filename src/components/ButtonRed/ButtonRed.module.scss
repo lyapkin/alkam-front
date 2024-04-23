@@ -1,0 +1,16 @@
+.button {
+    font-size: 16px;
+    height: 70px;
+    max-width: 350px;
+    width: 100%;
+    font-weight: 600;
+    line-height: 24px;
+    background: linear-gradient(180deg, #fd2b2b 0%, #ad3333 100%);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--gilroy);
+}
+
+.button:disabled {
+    background: #6c757d;
+}

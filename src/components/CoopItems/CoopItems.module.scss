@@ -1,0 +1,106 @@
+.button__active {
+    background: #e8f1f5 !important;
+    font-family: var(--mont);
+    color: #273039;
+}
+
+.button {
+    margin: 0 1px;
+    max-width: none;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 88px;
+    margin-bottom: 62px;
+}
+
+.text {
+    color: #1b1e21;
+    font-family: var(--gillroy);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.content h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.content h2 {
+    font-size: 44px;
+    margin-bottom: 40px;
+}
+
+.content h3 {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.content h4 {
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+.content h5 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.content h6 {
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.content p {
+    color: #1b1e21;
+    font-family: var(--gillroy);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1000px) {
+    .buttons {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .button {
+        width: 48%;
+    }
+}
+
+@media (max-width: 550px) {
+    .content h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .content h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    .content h3 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .content h4 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .content h5 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .content h6 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    
+    
+    .button {
+        width: 100%;
+    }
+}

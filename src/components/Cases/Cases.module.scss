@@ -1,0 +1,104 @@
+.cases {
+    position: relative;
+    padding-bottom: 220px;
+    z-index: 1;
+    background-color: #011c23;
+    &__items {
+        display: flex;
+        gap: 15px;
+    }
+    &__item {
+        max-width: 350px;
+        position: relative;
+        height: 470px;
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 100%;
+        backdrop-filter: blur(10px);
+        margin-top: 120px;
+        &:last-child {
+            background-color: rgba(0, 0, 0, 0.18);
+        }
+        &_number {
+            background-color: var(--white);
+            width: 66px;
+            height: 66px;
+            border-radius: 50%;
+            color: var(--red5);
+            font-weight: 600;
+            font-family: var(--firs);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 26px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+        &_line {
+            position: absolute;
+            left: 0;
+            height: 3px;
+            width: 80%;
+            background-color: rgba(123, 137, 144, 0.2);
+            &::after {
+                content: "";
+                border: 6px solid transparent;
+                border-left: 6px solid rgba(123, 137, 144, 0.2);
+                position: absolute;
+                right: -12px;
+                bottom: -5px;
+            }
+        }
+        &_title {
+            padding-top: 34px;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 32px;
+            margin-bottom: 52px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 15px;
+        }
+        &_text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+            color: rgba(242, 242, 242, 1);
+        }
+    }
+}
+
+.cases__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.cases__items {
+    position: relative;
+    z-index: 3;
+}
+
+.slider__hide {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .cases__items {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .cases__item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 600px) {
+    .cases__item {
+        width: 100%;
+    }
+}

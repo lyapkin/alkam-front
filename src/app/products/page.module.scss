@@ -1,0 +1,27 @@
+.supplies {
+    color: #fff;
+    background-image: url("../../../public/images/products/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 98px 0 112px 0;
+}
+
+.supplies__wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.supplies__text {
+    max-width: 742px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+@media (max-width: 900px) {
+    .supplies__wrap {
+        flex-direction: column;
+    }
+}

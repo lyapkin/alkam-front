@@ -1,0 +1,11 @@
+.content {
+    word-break: break-all;
+    padding: 0 20px;
+    & iframe {
+        width: 100%;
+    }
+    & img {
+        max-width: max-content;
+        width: 100% !important;
+    }
+}

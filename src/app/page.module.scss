@@ -1,0 +1,53 @@
+.wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.intro__text {
+    margin-top: 62px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    &_circle {
+        width: 8px;
+        height: 8px;
+        border: 2px solid var(--white);
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 8px;
+        &1 {
+            opacity: 0.3;
+        }
+        &2 {
+            opacity: 0.6;
+        }
+        &3 {
+            margin-right: 32px;
+        }
+    }
+}
+
+.intro {
+    height: 97vh;
+}
+
+.intro__buttons {
+    margin-top: 62px;
+}
+
+.intro__button {
+    margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+    .intro__text {
+        margin-top: 32px;
+    }
+
+    .intro__text_circle {
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
+}

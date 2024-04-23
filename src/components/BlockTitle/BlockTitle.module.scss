@@ -1,0 +1,13 @@
+.title {
+    font-family: Mont;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 46px;
+}
+
+@media (max-width: 800px) {
+    .title {
+        font-size: 22px;
+        text-align: center;
+    }
+}

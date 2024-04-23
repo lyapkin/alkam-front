@@ -1,0 +1,240 @@
+.title {
+    color: #000;
+    font-size: 40px !important;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+    margin-top: 65px;
+    margin-bottom: 40px;
+}
+
+.text {
+    color: #7b8990;
+    font-family: var(--gillroy);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    max-width: 653px;
+    margin-top: 40px;
+}
+
+.content p {
+    color: #1b1e21;
+    font-family: var(--gillroy);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.wrap {
+    margin-top: 60px;
+}
+
+.content h1 {
+    color: #1b1e21;
+    font-size: 48px;
+    margin: 40px 0;
+}
+
+.content h2 {
+    color: #1b1e21;
+    font-size: 44px;
+    margin: 40px 0;
+}
+
+.content h3 {
+    color: #1b1e21;
+    font-size: 38px;
+    margin: 40px 0;
+}
+
+.content h4 {
+    color: #1b1e21;
+    font-size: 34px;
+    margin: 40px 0;
+}
+
+.content h5 {
+    color: #1b1e21;
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.content h6 {
+    color: #1b1e21;
+    font-size: 26px;
+    margin: 40px 0;
+}
+
+.img__back {
+    position: absolute;
+    right: 0;
+    top: 250px;
+    width: 50%;
+}
+
+.items {
+    color: #1b1e21;
+    margin-top: 55px;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 86px;
+}
+
+.item {
+    position: relative;
+    max-width: 460px;
+    background-color: #e8f5fa;
+    padding: 62px 28px 50px 32px;
+    &__title {
+        font-family: var(--gillroy);
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 26px;
+        text-transform: uppercase;
+        margin-bottom: 42px;
+    }
+    &__number {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 64px;
+        height: 64px;
+        background-color: #fff;
+        color: #53cfff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--gillroy);
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 26px;
+    }
+    &__img {
+        position: absolute;
+        top: 0px;
+        right: 0;
+    }
+
+    &__line {
+        position: absolute;
+        left: 0;
+        height: 3px;
+        width: 90%;
+        background-color: rgba(123, 137, 144, 0.2);
+        &::after {
+            content: "";
+            border: 6px solid transparent;
+            border-left: 6px solid rgba(123, 137, 144, 0.2);
+            position: absolute;
+            right: -12px;
+            bottom: -5px;
+        }
+    }
+    &__text {
+        margin-top: 88px;
+        color: #7b8990;
+        font-family: var(--gillroy);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+.content__title {
+    font-family: var(--gillroy);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #1b1e21;
+    margin-bottom: 56px;
+    text-transform: uppercase;
+}
+
+.content__text {
+    color: #1b1e21;
+    font-family: var(--gillroy);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 1167px;
+    margin-bottom: 150px;
+}
+
+@media (max-width: 1440px) {
+    .img__back {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .img__back {
+        display: none;
+    }
+    .wrap {
+        text-align: center;
+    }
+    .text {
+        margin: 40px auto 0 auto;
+    }
+
+    .content__text {
+        margin-bottom: 40px;
+    }
+    .items {
+        justify-content: center;
+    }
+
+    .item {
+        text-align: left;
+    }
+}
+
+@media (max-width: 800px) {
+    .title {
+        font-size: 32px !important;
+    }
+    .items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .map {
+        max-width: 800px;
+        width: 100%;
+    }
+    .content__title {
+        font-size: 28px;
+    }
+    .content h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .content h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    .content h3 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .content h4 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .content h5 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .content h6 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 430px) {
+    .item__img {
+        width: 30%;
+        top: 20px;
+    }
+}

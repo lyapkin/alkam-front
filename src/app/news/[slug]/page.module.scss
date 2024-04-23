@@ -1,0 +1,22 @@
+.wrap {
+    color: #000;
+    padding: 40px 0;
+}
+
+.detail {
+    text-align: center;
+    margin-top: 120px;
+    color: #000;
+}
+
+.content {
+    word-break: break-all;
+    padding: 0 20px;
+    & iframe {
+        width: 100%;
+    }
+    & img {
+        max-width: max-content;
+        width: 100% !important;
+    }
+}

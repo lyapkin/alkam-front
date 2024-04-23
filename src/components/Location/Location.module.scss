@@ -1,0 +1,39 @@
+.location {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 12px;
+    font-family: var(--gilroy);
+    font-weight: 400;
+    font-size: 14px;
+    align-items: center;
+}
+
+.location__black p {
+    color: #000 !important;
+    font-weight: 600;
+}
+
+.item:first-child a {
+    width: 32px;
+    height: 32px;
+    background-color: rgb(#d4e2e7, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.item__grey {
+    color: #7b8990;
+}
+
+.item__white {
+    color: #fff;
+}
+
+.wrap {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
