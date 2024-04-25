@@ -19,7 +19,6 @@ export default async function About() {
 
     const slider1 = await AboutService.getSlider1()
     const slider2 = await AboutService.getSlider2()
-    console.log(slider1)
 
     return (
         <>
