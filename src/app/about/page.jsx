@@ -19,7 +19,6 @@ export default async function About() {
 
     const slider1 = await AboutService.getSlider1()
     const slider2 = await AboutService.getSlider2()
-    console.log('here',slider1)
 
     return (
         <>
@@ -56,7 +55,7 @@ export default async function About() {
                             Наше предприятие является производителем
                             полуфабрикатов из алюминиевых сплавов с огромным
                             опытом, высококвалифицированными специалистами,
-                            сертифицировано в соответствии системой менеджмента
+                            сертифицировано в соответствии c системой менеджмента
                             качества.
                         </p>
                         <h5 className={s.content__title}>
