@@ -7,7 +7,7 @@ export default function NewsItem({ article, style }) {
             <Link href={"news/" + article.slug}>
                 <img
                     className={s.item__image}
-                    src={`${process.env.BASE_URL + article.image_url}`}
+                    src={`${article.image_url}`}
                     alt=""
                 />
             </Link>
