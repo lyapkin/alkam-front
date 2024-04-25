@@ -23,7 +23,7 @@ export default function CoopItems({ data }) {
                     )}
                     onClick={() => setOpen(1)}
                 >
-                    Металлотрейдеррам
+                    Металлотрейдерам
                 </ButtonRed>
                 <ButtonRed
                     className={classNames(

@@ -12,4 +12,28 @@ export default class AboutService {
             console.log(e);
         }
     }
+
+    static async getSlider1() {
+        try {
+            const response = await fetch(`${BASE_URL}/company/slider1/`, {
+                next: { revalidate: 60 },
+            });
+            const data = await response.json();
+            return data;
+        } catch (e) {
+            console.log(e);
+        }
+    }
+
+    static async getSlider2() {
+        try {
+            const response = await fetch(`${BASE_URL}/company/slider2/`, {
+                next: { revalidate: 60 },
+            });
+            const data = await response.json();
+            return data;
+        } catch (e) {
+            console.log(e);
+        }
+    }
 }

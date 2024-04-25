@@ -16,6 +16,8 @@ export default async function About() {
         return data;
     };
 
+    // const slider1 = 
+
     return (
         <>
             <Intro
@@ -55,7 +57,7 @@ export default async function About() {
                             качества.
                         </p>
                         <h5 className={s.content__title}>
-                            На площади 5000 м.кв размещены, следующие цехи и
+                            На площади 5000 м.кв размещены следующие цехи и
                             участки:
                         </h5>
                         <div className={s.content__items}>
@@ -118,7 +120,7 @@ export default async function About() {
                 </div>
             </section>
             <div className="container">
-                <BlockTitle
+                {/* <BlockTitle
                     style={{
                         marginTop: 85,
                         maxWidth: 1110,
@@ -128,7 +130,7 @@ export default async function About() {
                 >
                     НА ПРОИЗВОДСТВЕННОЙ ПЛОЩАДКЕ ООО «АЛКАМ ПЛЮС» РАЗМЕЩАЕТСЯ
                     СЛЕДУЮЩЕЕ ОБОРУДОВАНИЕ:
-                </BlockTitle>
+                </BlockTitle> */}
                 <div className={s.slider}>
                     <SliderComponent
                         items={[
