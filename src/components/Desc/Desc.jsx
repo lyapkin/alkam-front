@@ -7,7 +7,6 @@ import SliderComponent from "../Slider/Slider";
 
 export default function Desc({pics}) {
     const textRef = useRef(null);
-    console.log(pics)
 
     const handle = () => {
         textRef.current.style.height === "auto"
