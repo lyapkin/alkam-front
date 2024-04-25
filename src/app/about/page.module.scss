@@ -33,10 +33,12 @@
 .slider__desc img {
     height: 246px;
     padding: 4px;
+    object-fit: cover;
 }
 
 .slider img {
     height: 400px;
+    object-fit: cover;
 }
 
 .about__info h1 {

@@ -7,6 +7,7 @@ import SliderComponent from "@/components/Slider/Slider";
 import Companies from "@/components/Сompanies/Сompanies";
 import FormService from "@/services/FormService";
 import s from "./page.module.scss";
+import AboutService from "@/services/AboutService";
 
 export default async function About() {
     const sendDataCall = async (params) => {
@@ -16,7 +17,8 @@ export default async function About() {
         return data;
     };
 
-    // const slider1 = 
+    const slider1 = await AboutService.getSlider1()
+    const slider2 = await AboutService.getSlider2()
 
     return (
         <>
@@ -134,6 +136,7 @@ export default async function About() {
                 <div className={s.slider}>
                     <SliderComponent
                         items={[
+                            ...slider1.map(slide => slide.img),
                             "/images/a2.png",
                             "/images/a3.png",
                             "/images/about/7.png",
@@ -219,7 +222,7 @@ export default async function About() {
                     </div>
                 </div>
             </div>
-            <Desc />
+            <Desc pics={slider2.map(slide => slide.img)} />
             <Companies style={{ marginTop: 40 }} />
             <SecureBlock />
             {/* <ToolsBlock /> */}
