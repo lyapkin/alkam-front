@@ -29,9 +29,7 @@ export default async function News() {
                 scrollBottom="news"
             >
                 <p className={s.text}>
-                    "АЛКАМ плюс" успешно осуществляет свою деятельность на рынке
-                    изготовления полуфабрикатов из цветных и черных металлов с
-                    2002 года.
+                    Здесь Вы можете ознакомиться с нашими последними новостями.
                 </p>
             </Intro>
             <NewsSection data={data} sliderOn={false} />

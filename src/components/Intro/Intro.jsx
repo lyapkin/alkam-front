@@ -45,7 +45,7 @@ export default function Intro({data, server, image, title, articles, isService, 
     return (
         <section style={{minHeight: '100vh', backgroundImage: `url(${image})`}} className={s.intro}>
             {!image &&
-                <video style={{height: '100vh'}} src={currentIntro.video || "/videos/services2.mp4"} className={"video"} autoPlay
+                <video style={{height: '100%'}} src={currentIntro.video || "/videos/services2.mp4"} className={"video"} autoPlay
                         muted
                         loop preload="auto">
                 <source />
