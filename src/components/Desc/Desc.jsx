@@ -72,17 +72,7 @@ export default function Desc({pics}) {
                     <div className={s.slider__desc}>
                         <SliderComponent
                             items={[
-                                ...pics,
-                                "/images/about/c1.png",
-                                "/images/about/c2.png",
-                                "/images/about/c3.png",
-                                "/images/about/c4.png",
-                                "/images/about/c5.png",
-                                "/images/about/c6.png",
-                                "/images/about/c7.png",
-                                "/images/about/c8.png",
-                                "/images/about/c9.png",
-                                "/images/about/c10.png",
+                                ...pics
                             ]}
                             show={3}
                             responsive={[

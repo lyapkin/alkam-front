@@ -19,6 +19,7 @@ export default async function About() {
 
     const slider1 = await AboutService.getSlider1()
     const slider2 = await AboutService.getSlider2()
+    console.log(slider1)
 
     return (
         <>
@@ -136,28 +137,7 @@ export default async function About() {
                 <div className={s.slider}>
                     <SliderComponent
                         items={[
-                            ...slider1.map(slide => slide.img),
-                            "/images/a2.png",
-                            "/images/a3.png",
-                            "/images/about/7.png",
-                            "/images/about/8.png",
-                            "/images/about/9.png",
-                            "/images/about/10.png",
-                            "/images/about/11.png",
-                            "/images/about/12.png",
-                            "/images/about/13.png",
-                            "/images/about/14.png",
-                            "/images/about/15.png",
-                            "/images/about/16.png",
-                            "/images/about/17.png",
-                            "/images/about/18.png",
-                            "/images/about/19.png",
-                            "/images/about/20.png",
-                            "/images/about/21.png",
-                            "/images/about/22.png",
-                            "/images/about/23.png",
-                            "/images/about/24.png",
-                            "/images/a1.png",
+                            ...slider1.map(slide => slide.img)
                         ]}
                         show={3}
                         responsive={[
