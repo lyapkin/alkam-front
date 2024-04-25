@@ -222,7 +222,7 @@ export default async function About() {
                     </div>
                 </div>
             </div>
-            <Desc pics={slider2.map(slide => slide.img)} />
+            <Desc />
             <Companies style={{ marginTop: 40 }} />
             <SecureBlock />
             {/* <ToolsBlock /> */}
