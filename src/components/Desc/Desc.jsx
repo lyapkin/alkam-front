@@ -5,7 +5,7 @@ import s from "../../app/about/page.module.scss";
 import BlockTitle from "../BlockTitle/BlockTitle";
 import SliderComponent from "../Slider/Slider";
 
-export default function Desc() {
+export default function Desc({pics}) {
     const textRef = useRef(null);
 
     const handle = () => {
@@ -72,7 +72,7 @@ export default function Desc() {
                     <div className={s.slider__desc}>
                         <SliderComponent
                             items={[
-                                // ...pics,
+                                ...pics,
                                 "/images/about/c1.png",
                                 "/images/about/c2.png",
                                 "/images/about/c3.png",

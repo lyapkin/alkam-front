@@ -136,7 +136,7 @@ export default async function About() {
                 <div className={s.slider}>
                     <SliderComponent
                         items={[
-                            // ...slider1.map(slide => slide.img),
+                            ...slider1.map(slide => slide.img),
                             "/images/a2.png",
                             "/images/a3.png",
                             "/images/about/7.png",
@@ -222,7 +222,7 @@ export default async function About() {
                     </div>
                 </div>
             </div>
-            <Desc />
+            <Desc pics={slider2.map(slide => slide.img)} />
             <Companies style={{ marginTop: 40 }} />
             <SecureBlock />
             {/* <ToolsBlock /> */}
