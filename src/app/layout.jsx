@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
                     k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
                     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
         
-                    ym(97308628, "init", {
+                    ym(54182878, "init", {
                             defer: true,
                             clickmap:true,
                             trackLinks:true,
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
                     });`
                     }
                 </Script>
-                {/* <noscript><div><img src="https://mc.yandex.ru/watch/97308628" style="position:absolute; left:-9999px;" alt="" /></div></noscript> */}
+                {/* <noscript><div><img src="https://mc.yandex.ru/watch/54182878" style="position:absolute; left:-9999px;" alt="" /></div></noscript> */}
                 <Suspense fallback={<></>}>
                     <YandexMetrika />
                 </Suspense>
